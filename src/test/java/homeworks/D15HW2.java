@@ -23,6 +23,7 @@ public class D15HW2 extends TestBaseReport {
     public void test01(){
         driver.get("https://practicetestautomation.com/practice-test-login/");
 
+        System.out.println("git test");
         driver.findElement(By.id("username")).sendKeys("incorrectUser");
         driver.findElement(By.id("password")).sendKeys("Password123");
         driver.findElement(By.id("submit")).click();
